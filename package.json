@@ -1,0 +1,19 @@
+{
+  "name": "backend-mega-proj-by-kh",
+  "version": "1.0.0",
+  "description": "chai aur backend playlist video lecture number seven se shuru.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javaScript",
+    "backend",
+    "node",
+    "express",
+    "mongoose",
+    "mongoDB"
+  ],
+  "author": "Kumar Harsh",
+  "license": "ISC"
+}
