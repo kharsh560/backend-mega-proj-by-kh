@@ -19,6 +19,17 @@ app.use(express.static("public"));
 // 18:30 -> To access the user's browser cookies and set them too.
 app.use(cookieParser());
 
+
+// 8:40 L13 -> Routes
+
+// routes importing statements
+import {router as userRouter} from "./routes/user.routes.js"
+
+// routes declaration
+// app.use("/user", userRouter); // Standard api routing practice:- see below
+app.use("/api/v1/user", userRouter);
+
+
 export default app
 
 
