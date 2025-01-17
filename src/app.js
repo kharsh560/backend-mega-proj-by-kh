@@ -3,13 +3,19 @@ import cors from "cors"
 import cookieParser from "cookie-parser"
 const app = express() 
 // the "app" variable now has all the powers of express instance.
+
 // Lec-9 : Chai aur Code
 // The cors can further have an object of what all things it should be taking.
-app.use(cors()); 
+// app.use(cors()); 
+// 11:47 L9) Just put "*" as "CORS_ORIGIN" in ".env" and use the below code instead of allowing everyone by doing 'cors()'
+app.use(cors({
+    origin: process.env.CORS_ORIGIN
+}));
 
+// 13:39 L9) Some more settings.
 // For data from URL forms/body, when we accept data, we do some restrictions!
 app.use(express.json({limit: "16kb"}));
-
+ 
 // For data from URL:
 app.use(express.urlencoded({extended: true, limit: "16kb"}));
 

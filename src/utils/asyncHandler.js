@@ -10,9 +10,6 @@ const asyncHandler = (requestHandler) => {
 
 export { asyncHandler }
 
-
-
-
 // const asyncHandler = () => {}
 // const asyncHandler = (func) => () => {}
 // const asyncHandler = (func) => async () => {}
@@ -28,3 +25,6 @@ export { asyncHandler }
 //         })
 //     }
 // }
+
+// What's its use?
+// Its a kind of middleware 
